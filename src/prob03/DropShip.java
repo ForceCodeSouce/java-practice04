@@ -1,10 +1,16 @@
 package prob03;
 
-public class DropShip {
+public class DropShip extends Unit{
 	// 현재 위치
 	private int x;
 	private int y;
 	
+	public DropShip(int hp, int mana, int x, int y) {
+		super(hp, mana);
+		this.x = x;
+		this.y = y;
+	}
+
 	void load() {
 		/* 선택된 대상을 태운다.*/ 
 	}

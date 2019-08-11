@@ -1,6 +1,7 @@
 package prob05;
 
 public class Base {
+	
 	public void service(String state){
 		if( state.equals( "낮" ) ) {
 			day();

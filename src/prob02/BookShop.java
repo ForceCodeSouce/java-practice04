@@ -27,6 +27,7 @@ public class BookShop {
 		for( Book book : books ) {
 			if( num == book.getBookNo() ) {
 				book.rent();
+				System.out.println(books[num].getTitle()+ "이 대여 되었습니다.");
 				break;
 			}
 		}
@@ -37,6 +38,8 @@ public class BookShop {
 	}
 	
 	private static void displayBookInfo( Book[] books ) {
-
+			for(int i=0; i < books.length; i++) {
+				books[i].print();
+			}
 	}	
 }

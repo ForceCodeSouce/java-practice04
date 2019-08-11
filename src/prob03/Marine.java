@@ -1,10 +1,17 @@
 package prob03;
 
-public class Marine {
+public class Marine extends Unit{
+
 	// 현재 위치
 	private int x;
 	private int y;
-	
+		
+	public Marine(int hp, int mana, int x, int y) {
+		super(hp, mana);
+		this.x = x;
+		this.y = y;
+	}
+
 	void stimPack() { 
 		/* 스팀팩을 사용한다.*/
 	}	
